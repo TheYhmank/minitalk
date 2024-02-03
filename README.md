@@ -26,13 +26,9 @@ Terms:
    The sa_flags field determines a number of different things, but the inpertant ones are whether we get the exetended
    information.
 
-  SA_RESTART:
+  SA_RESTART: This flag, when set, causes interrupted system calls to be automatically restarted by the operating system after the signal handler returns. It's useful to avoid manual restarts of interrupted system         calls.
 
-    This flag, when set, causes interrupted system calls to be automatically restarted by the operating system after the signal handler returns. It's useful to avoid manual restarts of interrupted system         calls.
-
-   SA_SIGINFO:
-
-    When this flag is set, it indicates that the signal handler takes three arguments: the signal number, a pointer to a siginfo_t structure (providing additional information about the signal), and a pointer
+   SA_SIGINFO: When this flag is set, it indicates that the signal handler takes three arguments: the signal number, a pointer to a siginfo_t structure (providing additional information about the signal), and a pointer
     to a ucontext_t (providing a snapshot of the current execution context). This is useful for more detailed information about the signal.
    
    
