@@ -6,7 +6,7 @@
 /*   By: ayermeko <ayermeko@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 12:28:28 by anmakaro          #+#    #+#             */
-/*   Updated: 2024/02/10 16:26:52 by ayermeko         ###   ########.fr       */
+/*   Updated: 2024/02/10 18:20:06 by ayermeko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,17 +38,10 @@ int	main(int ac, char **av)
 	if (ac == 3 && server_pid > 1)
 	{
 		while (av[2][i])
-		{
-			ft_send_bit(server_pid, av[2][i]);
-			i++;
-		}
+			ft_send_bit(server_pid, av[2][i++]);
 		ft_send_bit(server_pid, '\n');
 	}
 	else
-	{
-		ft_putendl_fd(C_ERROR, 1);
 		ft_putendl_fd(C_ARGS, 1);
-		ft_putendl_fd(C_EX_ARGS, 1);
-	}
 	return (0);
 }

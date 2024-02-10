@@ -6,7 +6,7 @@
 /*   By: ayermeko <ayermeko@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 12:28:44 by anmakaro          #+#    #+#             */
-/*   Updated: 2024/02/10 16:26:46 by ayermeko         ###   ########.fr       */
+/*   Updated: 2024/02/10 17:04:20 by ayermeko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,6 @@ int	main(void)
 	struct sigaction	sa;
 
 	pid = getpid();
-	ft_putendl_fd(S_WLC, 1);
 	ft_putstr_fd(S_PID, 1);
 	ft_putnbr_fd(pid, 1);
 	ft_putstr_fd(S_END_TRANS, 1);
