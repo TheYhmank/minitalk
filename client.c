@@ -6,7 +6,7 @@
 /*   By: ayermeko <ayermeko@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 12:28:28 by anmakaro          #+#    #+#             */
-/*   Updated: 2024/02/10 18:20:06 by ayermeko         ###   ########.fr       */
+/*   Updated: 2024/02/11 17:41:34 by ayermeko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_send_bit(int server_pid, char c)
 	index_bit = 0;
 	while (index_bit < 8)
 	{
-		if (c & (0x01 << index_bit))
+		if (c & (1 << index_bit))
 			kill(server_pid, SIGUSR1);
 		else
 			kill(server_pid, SIGUSR2);

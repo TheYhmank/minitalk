@@ -6,7 +6,7 @@
 /*   By: ayermeko <ayermeko@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 12:28:44 by anmakaro          #+#    #+#             */
-/*   Updated: 2024/02/10 17:04:20 by ayermeko         ###   ########.fr       */
+/*   Updated: 2024/02/11 17:38:19 by ayermeko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ft_handle_signal(int signal, siginfo_t *siginfo, void *cont)
 	(void)siginfo;
 	(void)cont;
 	if (signal == SIGUSR1)
-		i |= (0x01 << bit);
+		i |= (1 << bit);
 	bit++;
 	if (bit == 8)
 	{
