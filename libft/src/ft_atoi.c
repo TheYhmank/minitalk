@@ -6,7 +6,7 @@
 /*   By: ayermeko <ayermeko@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 12:41:40 by ayermeko          #+#    #+#             */
-/*   Updated: 2024/02/10 16:13:47 by ayermeko         ###   ########.fr       */
+/*   Updated: 2024/02/11 14:46:13 by ayermeko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,7 @@ int	ft_atoi(const char *str)
 	int	result;
 
 	if (str == NULL)
-	{
 		return (0);
-	}
 	result = 0;
 	while (*str == ' ' || (9 <= *str && *str <= 13))
 	{
